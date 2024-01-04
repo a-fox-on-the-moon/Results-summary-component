@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  text-align: center;
+  min-height: 100vh;
+}
+
+header {
+  background: rgb(45, 42, 232);
+  background: linear-gradient(
+    0deg,
+    rgba(45, 42, 232, 1) 35%,
+    rgba(120, 86, 255, 1) 100%
+  );
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 20px;
+}
+
+header h1 {
+  color: rgba(255, 255, 255, 0.652);
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.total-score {
+  background: rgb(77, 32, 201);
+  background: linear-gradient(
+    180deg,
+    rgba(69, 29, 179, 0.8214285714285714) 34%,
+    rgba(35, 32, 201, 0) 100%
+  );
+  border-radius: 100px;
+  max-width: 40%;
+  padding: 20px;
+}
+
+.total-score h2 {
+  color: rgb(255, 255, 255);
+  font-size: 3.5rem;
+}
+
+.total-score p {
+  color: rgba(255, 255, 255, 0.652);
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  margin: 20px 0 10px;
+}
+
+header p {
+  color: rgba(255, 255, 255, 0.652);
+  max-width: 80%;
+}
+
+main h4 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-align: left;
+  color: rgb(48, 59, 89);
+  margin: 25px;
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin: 0 auto 10px;
+  padding: 15px;
+  width: 20rem;
+}
+
+.reaction-left,
+.memory-left,
+.verbal-left,
+.visual-left {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  margin: 0;
+}
+
+.reaction-right,
+.memory-right,
+.verbal-right,
+.visual-right {
+  margin: 0;
+}
+
+.reaction {
+  background: rgba(255, 86, 86, 0.05);
+  color: rgb(255, 86, 86);
+}
+
+.memory {
+  background: rgb(255, 176, 30, 0.05);
+  color: rgb(255, 176, 30);
+}
+
+.verbal {
+  background: rgb(0, 188, 144, 0.05);
+  color: rgb(0, 188, 144);
+}
+
+.visual {
+  background: rgb(17, 36, 212, 0.05);
+  color: rgb(17, 36, 212);
+}
+
+main i {
+  padding-right: 10px;
+}
+
+button {
+  font-family: "Hanken Grotesk";
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  background: rgb(48, 59, 89);
+  border: none;
+  border-radius: 25px;
+  width: 90%;
+  padding: 13px 0;
+  margin: 20px;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: rgb(45, 42, 232);
+  background: linear-gradient(
+    0deg,
+    rgba(45, 42, 232, 1) 35%,
+    rgba(120, 86, 255, 0.9) 100%
+  );
+  cursor: pointer;
+}
