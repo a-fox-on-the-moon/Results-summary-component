@@ -2,13 +2,21 @@
 
 * {
   box-sizing: border-box;
-  margin: 0 auto;
 }
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Hanken Grotesk", sans-serif;
   text-align: center;
   min-height: 100vh;
+  margin: 0 auto;
+
+  @media screen and (max-width: 660px) {
+    display: block;
+    width: 100%;
+  }
 }
 
 header {
@@ -18,9 +26,14 @@ header {
     rgba(45, 42, 232, 1) 35%,
     rgba(120, 86, 255, 1) 100%
   );
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-radius: 20px;
   padding: 20px;
+  width: 20rem;
+  height: 28rem;
+
+  @media screen and (max-width: 660px) {
+    width: 100%;
+  }
 }
 
 header h1 {
@@ -31,6 +44,10 @@ header h1 {
 }
 
 .total-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background: rgb(77, 32, 201);
   background: linear-gradient(
     180deg,
@@ -38,17 +55,28 @@ header h1 {
     rgba(35, 32, 201, 0) 100%
   );
   border-radius: 100px;
-  max-width: 40%;
-  padding: 20px;
+  max-width: 58%;
+  padding: 20px 15px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 660px) {
+    width: 30%;
+  }
+
+  @media screen and (max-width: 470px) {
+    width: 45%;
+  }
 }
 
 .total-score h2 {
   color: rgb(255, 255, 255);
   font-size: 3.5rem;
+  margin: 5px;
 }
 
 .total-score p {
   color: rgba(255, 255, 255, 0.652);
+  margin-top: 0;
 }
 
 h3 {
@@ -60,6 +88,18 @@ h3 {
 header p {
   color: rgba(255, 255, 255, 0.652);
   max-width: 80%;
+  margin: 20px auto;
+}
+
+main {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 20rem;
+  height: 28rem;
+
+  @media screen and (max-width: 660px) {
+    width: 100%;
+  }
 }
 
 main h4 {
@@ -78,8 +118,8 @@ main h4 {
   justify-content: space-between;
   border-radius: 10px;
   margin: 0 auto 10px;
-  padding: 15px;
-  width: 20rem;
+  padding: 0 15px;
+  width: 16rem;
 }
 
 .reaction-left,
@@ -123,6 +163,15 @@ main i {
   padding-right: 10px;
 }
 
+.score1 {
+  font-weight: 800;
+  color: rgb(48, 59, 89);
+}
+
+.score2 {
+  color: rgba(48, 59, 89, 0.696);
+}
+
 button {
   font-family: "Hanken Grotesk";
   font-size: 1.2rem;
@@ -130,9 +179,9 @@ button {
   background: rgb(48, 59, 89);
   border: none;
   border-radius: 25px;
-  width: 90%;
-  padding: 13px 0;
-  margin: 20px;
+  width: 75%;
+  padding: 10px 0;
+  margin: 30px 20px 20px;
   transition: 0.2s ease;
 }
 
