@@ -94,6 +94,7 @@ header p {
 }
 
 main {
+  box-shadow: 3px 5px 19px -5px #000000;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   width: 20rem;
